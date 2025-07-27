@@ -1,0 +1,133 @@
+.footer {
+  position: relative;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  height: 566px;
+  padding: 50px 92px;
+}
+
+.footer .logo {
+  width: 178px;
+  padding-bottom: 50px;
+}
+
+.footer .line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 24px;
+  background-color: #414141;
+}
+
+.footer .informations {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.footer .informations .about {
+  max-width: 514px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer .informations .about p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer .informations .about div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .informations .about div span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer .informations .institutional {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer .informations h3 {
+  font-weight: 700;
+}
+
+.footer .informations .institutional p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.footer .informations .institutional p:hover {
+  color: #ffffff;
+}
+
+.footer .informations .paymentAndSocial {
+  display: flex;
+  gap: 14px;
+}
+
+.footer .informations .paymentAndSocial div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer .informations .paymentAndSocial div .pix {
+  width: 92px;
+}
+
+.footer .informations .paymentAndSocial div .insta {
+  width: 30px;
+}
+
+.footer .copyright {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer .copyright p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer .msg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #686868;
+  padding: 18px 16px;
+  border-radius: 100%;
+  bottom: 24px;
+  right: 24px;
+  transition: .2s ease-in;
+  cursor: pointer;
+}
+
+.footer .msg:hover {
+  background-color: #9b9898;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1240px) {
+  .footer {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "BAC BO LIVE",
+    "imageDesktop": "/banner-desktop.png",
+    "imageMobile": "/mobile-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Touro Sortudo",
+    "imageDesktop": "/banner-desktop-2.png",
+    "imageMobile": "/mobile-2.png"
+  }
+]

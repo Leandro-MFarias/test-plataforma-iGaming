@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --background-main: ;
+  --button-active: #e2c36a;
+  --button-default: #2E2E2E;
+  --text-secondary: #7D7D7D;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  list-style: none;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.containerMain {
+  flex: 1;
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 8px 90px 8px;
+}

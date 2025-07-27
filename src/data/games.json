@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "category": "Melhores jogos ao vivo",
+    "icon": "/trophy.png",
+    "name": "football",
+    "image": "/jogos/football.png"
+  },
+  {
+    "id": 2,
+    "category": "Melhores jogos ao vivo",
+    "icon": "/trophy.png",
+    "name": "bacbo",
+    "image": "/jogos/bacbo.png"
+  },
+  {
+    "id": 3,
+    "category": "Melhores jogos ao vivo",
+    "icon": "/trophy.png",
+    "name": "immersive",
+    "image": "/jogos/immersive.png"
+  },
+  {
+    "id": 4,
+    "category": "Melhores jogos ao vivo",
+    "icon": "/trophy.png",
+    "name": "football",
+    "image": "/jogos/football.png"
+  },
+  {
+    "id": 5,
+    "category": "Melhores jogos ao vivo",
+    "icon": "/trophy.png",
+    "name": "bacbo",
+    "image": "/jogos/bacbo.png"
+  },
+  {
+    "id": 6,
+    "category": "Melhores jogos ao vivo",
+    "icon": "/trophy.png",
+    "name": "immersive",
+    "image": "/jogos/immersive.png"
+  },
+  {
+    "id": 7,
+    "category": "Melhores jogos ao vivo",
+    "icon": "/trophy.png",
+    "name": "football",
+    "image": "/jogos/football.png"
+  },
+  {
+    "id": 8,
+    "category": "Roleta",
+    "icon": "/roulette.png",
+    "name": "immersive",
+    "image": "/jogos/immersive.png"
+  },
+  {
+    "id": 9,
+    "category": "Roleta",
+    "icon": "/roulette.png",
+    "name": "roulette",
+    "image": "/jogos/roulette.png"
+  },
+  {
+    "id": 10,
+    "category": "Roleta",
+    "icon": "/roulette.png",
+    "name": "auto mega",
+    "image": "/jogos/auto-mega.png"
+  },
+  {
+    "id": 11,
+    "category": "Roleta",
+    "icon": "/roulette.png",
+    "name": "immersive",
+    "image": "/jogos/immersive.png"
+  },
+  {
+    "id": 12,
+    "category": "Roleta",
+    "icon": "/roulette.png",
+    "name": "roulette",
+    "image": "/jogos/roulette.png"
+  },
+  {
+    "id": 13,
+    "category": "Roleta",
+    "icon": "/roulette.png",
+    "name": "auto-mega",
+    "image": "/jogos/auto-mega.png"
+  },
+  {
+    "id": 14,
+    "category": "Roleta",
+    "icon": "/roulette.png",
+    "name": "immersive",
+    "image": "/jogos/immersive.png"
+  },
+  {
+    "id": 15,
+    "category": "Baccarat",
+    "icon": "/cards.png",
+    "name": "baccarat 8",
+    "image": "/jogos/baccarat-8.png"
+  },
+  {
+    "id": 16,
+    "category": "Baccarat",
+    "icon": "/cards.png",
+    "name": "baccarat a",
+    "image": "/jogos/baccarat-a.png"
+  },
+  {
+    "id": 17,
+    "category": "Baccarat",
+    "icon": "/cards.png",
+    "name": "baccarat squeeze",
+    "image": "/jogos/baccarat-squeeze.png"
+  },
+  {
+    "id": 18,
+    "category": "Baccarat",
+    "icon": "/cards.png",
+    "name": "baccarat 8",
+    "image": "/jogos/baccarat-8.png"
+  },
+  {
+    "id": 19,
+    "category": "Baccarat",
+    "icon": "/cards.png",
+    "name": "baccarat a",
+    "image": "/jogos/baccarat-a.png"
+  },
+  {
+    "id": 20,
+    "category": "Baccarat",
+    "icon": "/cards.png",
+    "name": "baccarat squeeze",
+    "image": "/jogos/baccarat-squeeze.png"
+  },
+  {
+    "id": 21,
+    "category": "Baccarat",
+    "icon": "/cards.png",
+    "name": "baccarat 8",
+    "image": "/jogos/baccarat-8.png"
+  },
+  {
+    "id": 22,
+    "category": "Blackjack",
+    "icon": "/trophy.png",
+    "name": "azure 1",
+    "image": "/jogos/azure-1.png"
+  },
+  {
+    "id": 23,
+    "category": "Blackjack",
+    "icon": "/trophy.png",
+    "name": "azure 2",
+    "image": "/jogos/azure-2.png"
+  },
+  {
+    "id": 24,
+    "category": "Blackjack",
+    "icon": "/trophy.png",
+    "name": "one blackjack",
+    "image": "/jogos/one-blackjack.png"
+  },
+  {
+    "id": 25,
+    "category": "Blackjack",
+    "icon": "/trophy.png",
+    "name": "azure 1",
+    "image": "/jogos/azure-1.png"
+  },
+  {
+    "id": 26,
+    "category": "Blackjack",
+    "icon": "/trophy.png",
+    "name": "azure 2",
+    "image": "/jogos/azure-2.png"
+  },
+  {
+    "id": 27,
+    "category": "Blackjack",
+    "icon": "/trophy.png",
+    "name": "one blackjack",
+    "image": "/jogos/one-blackjack.png"
+  },
+  {
+    "id": 28,
+    "category": "Blackjack",
+    "icon": "/trophy.png",
+    "name": "azure 1",
+    "image": "/jogos/azure-1.png"
+  },
+  {
+    "id": 29,
+    "category": "Dados",
+    "icon": "/trophy.png",
+    "name": "boom city",
+    "image": "/jogos/boom-city.png"
+  },
+  {
+    "id": 30,
+    "category": "Dados",
+    "icon": "/trophy.png",
+    "name": "sic bac",
+    "image": "/jogos/sic-bac.png"
+  },
+  {
+    "id": 31,
+    "category": "Dados",
+    "icon": "/trophy.png",
+    "name": "mega sic",
+    "image": "/jogos/mega-sic.png"
+  },
+  {
+    "id": 32,
+    "category": "Dados",
+    "icon": "/trophy.png",
+    "name": "sic bo",
+    "image": "/jogos/sicbo.png"
+  }
+]

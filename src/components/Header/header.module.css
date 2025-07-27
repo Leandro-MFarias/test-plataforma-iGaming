@@ -1,0 +1,102 @@
+.header {
+  background-color: #1c1c1c80;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 16px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+nav ul li {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+  color: var(--button-active);
+}
+
+.navActive {
+  color: var(--button-active);
+}
+
+.navActive::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -22px;
+  height: 2px;
+  background-color: var(--button-active);
+}
+
+.containerButtons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notification {
+  position: relative;
+  transition: 0.2s ease;
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
+.notification:hover {
+  transform: scale(1.1);
+}
+
+.couterNotification {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: -8px;
+  right: -6px;
+  background-color: #fa1212;
+  padding: 0 4px;
+  border-radius: 100%;
+}
+
+.couterNotification span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.buttonRegister {
+  background: linear-gradient(to right, #9c7e25, #e2c36a);
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.buttonLogin {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}

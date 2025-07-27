@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+}
+
+.containerInput {
+  position: relative;
+}
+.containerInput img {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.input {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  width: 100%;
+  padding: 12px 28px;
+  border-radius: 5px;
+}
+
+.containerList {
+  z-index: 2;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.514);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  border-radius: 6px;
+}
+
+.containerList img {
+  width: 140px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.containerList img:hover {
+  transform: scale(1.05);
+}
+
+.containerList p {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .containerList {
+    justify-content: center;
+  }
+}
