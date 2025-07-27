@@ -10,7 +10,7 @@ export function Categories() {
   }
 
   return (
-    <div className={styles.categories}>
+    <div className={`${styles.categories} ${styles.snapsInline}`}>
       <button
         className={
           selectedCategory === "todos"
