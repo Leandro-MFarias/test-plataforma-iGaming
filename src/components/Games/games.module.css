@@ -15,11 +15,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  background-color: #FFFFFF0D;
+  background-color: #ffffff0d;
   padding: 10px;
   border-radius: 10px;
 }
-
 
 .headerCategory div {
   display: flex;
@@ -36,7 +35,7 @@
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .headerCategory div .seeAll:hover {
@@ -61,20 +60,39 @@
   gap: 16px;
   overflow: hidden;
 }
-.carousel {
-  display: flex;
+.scrollGames {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  overflow-x: auto;
   gap: 16px;
-  overflow: hidden;
+  padding: 0 0 10px 0;
+  overscroll-behavior-inline: contain;
 }
 
-.carousel img {
-  width: 166px;
+.scrollGames::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollGames::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary);
   border-radius: 10px;
 }
 
-@media(max-width: 768px) {
+.scrollGames img,
+.listGames img {
+  width: 166px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.scrollGames img:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
   .listGames {
     justify-content: center;
   }
 }
-

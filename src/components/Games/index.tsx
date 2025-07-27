@@ -33,7 +33,7 @@ export function Games() {
                 </div>
               </div>
 
-              <div className={styles.carousel}>
+              <div className={styles.scrollGames}>
                 {games
                   .filter((game) => game.category === category.category)
                   .map((game) => (
