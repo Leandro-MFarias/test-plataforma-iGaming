@@ -1,5 +1,5 @@
 import { useCategory } from "../../context/CategoriesContext";
-import { categories } from "../util/getCategories";
+import { categories } from "../../util/getCategories";
 import styles from "./category.module.css";
 
 export function Categories() {

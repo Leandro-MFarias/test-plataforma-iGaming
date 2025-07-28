@@ -1,69 +1,110 @@
-# React + TypeScript + Vite
+## 🌰 Plataforma de iGaming — Interface de Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é parte do teste técnico da REALS para demonstrar habilidades no desenvolvimento de interfaces modernas utilizando React. A proposta é replicar uma dashboard de uma plataforma de apostas online (iGaming), com base em um design do Figma, utilizando dados estáticos (mockados).
 
-Currently, two official plugins are available:
+### 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** (Vite)
+- **TypeScript**
+- **CSS Modules**
+- **Mock de dados (JSON local)** Escolhi ter apenas dois json para ficar mais simples.
 
-## Expanding the ESLint configuration
+### 📁 Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+│
+├── assets/            # Imagens e ícones usados na interface
+├── components/        # Componentes reutilizáveis da interface
+│   ├── Header/        # Cabeçalho com navegação e usuário
+│   ├── Games/         # Jogos mockados
+│   ├── Categories/    # Lista de categorias para filtro
+│   └── ...
+├── data/              # Arquivo estático com os dados mockados (games.json)
+├── context/           # Context para passar a categoria
+├── pages/             # Página principal da dashboard e login e registro
+├── types/             # Schema do Zod para os forms
+├── App.tsx
+├── index.css          # CSS global
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📸 Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Visualização de uma grade de jogos (mockados)
+- Filtro por categorias (ex: Ao vivo, Roleta, Blackjack, etc)
+- Destaque visual para categoria ativa
+- Responsividade
+- Interações visuais com hover e seleção
+- Animações suaves entre os elementos
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 🧪 Dados Mockados
+
+Todos os jogos são carregados a partir de um JSON local com estrutura similar:
+
+```json
+{
+  "id": 1,
+  "title": "Jogo 1",
+  "category": "Cassino",
+  "image": "/assets/jogo1.jpg"
+}
 ```
+
+O filtro de categorias é gerado automaticamente a partir da propriedade `category` dos jogos.
+
+### 💡 Observações
+
+- Evitei o uso de bibliotecas externas para a construção do design da interface, como Swiper, bibliotecas de ícones ou qualquer outro tipo de framework de UI. Toda a estrutura e os estilos foram desenvolvidos manualmente com CSS Modules para manter o foco no desenvolvimento da interface a partir do zero.
+- As únicas dependências utilizadas foram:
+
+  ```json
+  {
+    "@hookform/resolvers": "^5.2.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.61.1",
+    "react-router": "^7.7.1",
+    "zod": "^4.0.10"
+  }
+  ```
+
+- **Não há conexão com backend ou autenticação real.**
+  O login apenas simula o comportamento com dados armazenados no `localStorage` para fins de demonstração.
+
+- O foco do projeto é **a fidelidade ao layout, modularização dos componentes e uso correto do React.**
+
+- Comentários no código sinalizam pontos de demonstração (ex: login fictício).
+
+### 🛠️ Como Rodar Localmente
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/igaming-dashboard.git
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o projeto:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Acesse no navegador:
+
+   ```
+   http://localhost:5173
+   ```
+
+### 📸 Layout do Projeto
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+  <img src="src/assets/design/mobile.png" alt="Mobile layout" width="300" />
+  <img src="src/assets/design/mac-desktop.png" alt="Desktop layout" width="600" />
+</div>

@@ -1,6 +1,6 @@
 import { useCategory } from "../../context/CategoriesContext";
 import games from "../../data/games.json";
-import { categories } from "../util/getCategories";
+import { categories } from "../../util/getCategories";
 import styles from "./games.module.css";
 
 export function Games() {
