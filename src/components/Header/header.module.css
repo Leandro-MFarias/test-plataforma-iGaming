@@ -95,6 +95,43 @@ nav ul li:hover {
   cursor: pointer;
 }
 
+.userDropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.userButton {
+  all: unset;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown {
+  background-color: var(--button-default);
+  padding: 8px 12px;
+  border-radius: 6px;
+  position: absolute;
+  top: 22px;
+  right: -6px;
+  z-index: 10;
+}
+
+.logout {
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.logout:hover {
+  color: #ffffff;
+}
+
+
 @media (max-width: 768px) {
   nav {
     display: none;

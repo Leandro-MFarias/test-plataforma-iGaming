@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
 
 export function Header() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [user, setUser] = useState<string | null>(null);
+  const [showDropdown, setShowDropdown] = useState(false)
 
   useEffect(() => {
     const stored = localStorage.getItem("account");
@@ -17,8 +18,8 @@ export function Header() {
   }, []);
 
   function logout() {
-    setUser(null)
-    navigate("/login")
+    setUser(null);
+    navigate("/login");
   }
 
   const navItems = ["AO VIVO", "ESPORTES", "CASSINO", "CASSINO AO VIVO"];
@@ -48,9 +49,21 @@ export function Header() {
           </div>
         </div>
         {user ? (
-          <div className={styles.user}>
-            <button>{user}</button>
-            <p onClick={logout}>Logout</p>
+          <div className={styles.userDropdown}>
+            <button
+              onClick={() => setShowDropdown((prev) => !prev)}
+              className={styles.userButton}
+            >
+              {user}
+            </button>
+
+            {showDropdown && (
+              <div className={styles.dropdown}>
+                <p onClick={logout} className={styles.logout}>
+                  Logout
+                </p>
+              </div>
+            )}
           </div>
         ) : (
           <>
