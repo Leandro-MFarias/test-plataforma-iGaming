@@ -1,9 +1,25 @@
 import styles from "./header.module.css";
 import bell from "../../assets/bell.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router";
 
 export function Header() {
+  const navigate = useNavigate()
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [user, setUser] = useState<string | null>(null);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("account");
+    if (!stored) return;
+
+    const user = JSON.parse(stored);
+    setUser(user.name);
+  }, []);
+
+  function logout() {
+    setUser(null)
+    navigate("/login")
+  }
 
   const navItems = ["AO VIVO", "ESPORTES", "CASSINO", "CASSINO AO VIVO"];
 
@@ -31,8 +47,21 @@ export function Header() {
             <span>1</span>
           </div>
         </div>
-        <button className={styles.buttonRegister}>Registre-se</button>
-        <button className={styles.buttonLogin}>Entrar</button>
+        {user ? (
+          <div className={styles.user}>
+            <button>{user}</button>
+            <p onClick={logout}>Logout</p>
+          </div>
+        ) : (
+          <>
+            <Link to={"/register"}>
+              <button className={styles.buttonRegister}>Registre-se</button>
+            </Link>
+            <Link to={"/login"}>
+              <button className={styles.buttonLogin}>Entrar</button>
+            </Link>
+          </>
+        )}
       </div>
     </header>
   );
