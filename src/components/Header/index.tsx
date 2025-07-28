@@ -7,7 +7,7 @@ export function Header() {
   const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [user, setUser] = useState<string | null>(null);
-  const [showDropdown, setShowDropdown] = useState(false)
+  const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem("account");
@@ -22,11 +22,23 @@ export function Header() {
     navigate("/login");
   }
 
+  function deleteAccout() {
+    localStorage.removeItem("account")
+    setUser(null);
+    navigate("/login");
+  }
+
   const navItems = ["AO VIVO", "ESPORTES", "CASSINO", "CASSINO AO VIVO"];
 
   return (
     <header className={styles.header}>
-      <img src="/uxbet-logo.png" alt="logo da uxbet" className={styles.logo} />
+      <Link to="/">
+        <img
+          src="/uxbet-logo.png"
+          alt="logo da uxbet"
+          className={styles.logo}
+        />
+      </Link>
       <nav>
         <ul className="">
           {navItems.map((item, index) => (
@@ -60,7 +72,10 @@ export function Header() {
             {showDropdown && (
               <div className={styles.dropdown}>
                 <p onClick={logout} className={styles.logout}>
-                  Logout
+                  Sair
+                </p>
+                <p onClick={deleteAccout} className={styles.logout}>
+                  Deletar
                 </p>
               </div>
             )}

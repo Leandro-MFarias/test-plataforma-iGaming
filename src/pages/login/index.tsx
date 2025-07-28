@@ -20,8 +20,14 @@ export function Login() {
 
   function handleForm(data: LoginSchema) {
     const stored = localStorage.getItem("account");
+    if (data && !stored) {
+      setError("root", { message: "Email ou senha errado" });
+    }
+
     if (!stored) return;
+
     const user = JSON.parse(stored);
+
     if (data.email === user.email && data.password === user.password) {
       navigate("/");
     } else {
